@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_add"
+            android:hint="푸드트럭을 추가하세요"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:layout_weight="1"
+            android:text="푸드트럭 추가"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_del"
+            android:layout_weight="1"
+            android:text="푸드트럭 삭제"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울"
+                    android:id="@+id/btn_seoul"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="강동"
+                    android:id="@+id/btn_gangdong"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="강서"
+                    android:id="@+id/btn_gangseo"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="강남"
+                    android:id="@+id/btn_gangnam"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="강북"
+                    android:id="@+id/btn_gangbuk"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/listView_gangdong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/listView_gangseo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/listView_gangnam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/listView_gangbuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
